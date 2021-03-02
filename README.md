@@ -6,7 +6,7 @@ https://github.com/LITW08/DictionaryAndSession/blob/master/DictionaryAndSession/
 
 https://github.com/LITW08/DictionaryAndSession/blob/master/DictionaryAndSession/Startup.cs#L44
 
-Also, to add any arbitrary C# object to session, use the following extension method (you'll first need to install the NewtonSoft.Json library via Nuget):
+Also, to add any arbitrary C# object to session, use the following extension method (you'll first need to install the Newtonsoft.Json library via Nuget):
 
     public static class SessionExtensions
     {
