@@ -1,0 +1,17 @@
+﻿@model CountsViewModel
+
+    <form action="/home/wordcount">
+        <div class="row">
+            <div class="col-md-10">
+                <input value="@Model.Text" type="text" class="form-control form-control-lg" name="text" />
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-block btn-lg">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    @foreach (var kvp in Model.Counts)
+    {
+        <h3>There are @kvp.Value @kvp.Key's</h3>
+    }
